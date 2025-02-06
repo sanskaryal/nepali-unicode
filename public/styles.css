@@ -75,5 +75,52 @@ body {
     textarea {
       height: 80px;
     }
+    .theme-toggle {
+      top: 10px;
+      right: 10px;
+    }
+  }
+
+  .theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
   }
   
+  .theme-toggle input[type="radio"] {
+    display: none;
+  }
+  
+  .theme-toggle label {
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .theme-toggle input[type="radio"]:checked + label {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  body.dark-mode {
+    background-color: #333;
+    color: #eef5fc;
+  }
+  
+  body.dark-mode .container {
+    background: #444;
+    color: #eef5fc;
+  }
+  
+  body.dark-mode button {
+    background-color: #0056b3;
+  }
+  
+  body.dark-mode button:hover {
+    background-color: #003f7f;
+  }
