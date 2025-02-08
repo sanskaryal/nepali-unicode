@@ -2,6 +2,7 @@ version: '3'
 services:
   app:
     build: .
+    container_name: unicode-app
     ports:
       - "18080:8082"
     environment:
