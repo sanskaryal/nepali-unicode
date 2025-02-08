@@ -3,6 +3,6 @@ services:
   app:
     build: .
     ports:
-      - "18080:8080"
+      - "18080:8082"
     environment:
       - PORT=8082
