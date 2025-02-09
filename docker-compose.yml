@@ -4,6 +4,6 @@ services:
     build: .
     container_name: unicode-app
     ports:
-      - "18070:8082"
+      - "18080:18080"
     environment:
-      - PORT=8082
+      - PORT=18080
